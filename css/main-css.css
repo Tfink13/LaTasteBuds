@@ -1,4 +1,6 @@
-html{ background: black;}
+html {
+  background: black;
+}
 
 section.container div.mySlides img.simg {
   position: absolute;
@@ -11,10 +13,11 @@ section.container div.mySlides img.simg {
 
 .ai1 {
   width: 100px;
-  position: relative;
   cursor: pointer;
+  position: relative;
 
 }
+
 div#buttons {
   display: flex;
   justify-content: space-between;
@@ -32,10 +35,12 @@ div#buttons {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
 }
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   div#buttons {
