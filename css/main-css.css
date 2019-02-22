@@ -2,7 +2,7 @@ html {
   background: black;
 }
 
-section.container div.mySlides img.simg {
+img.simg {
   position: absolute;
   left: 0;
   top: 0;
@@ -15,7 +15,39 @@ section.container div.mySlides img.simg {
   width: 100px;
   cursor: pointer;
   position: relative;
+}
 
+/* navigation section */
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #221;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  height: 2%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* an underline appears at the bottom on hover of each link */
+nav ul li a:hover, nav ul li a:active {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 8px;
 }
 
 div#buttons {
