@@ -15,3 +15,7 @@ section.container div.mySlides img.simg {
   cursor: pointer;
 
 }
+div#buttons {
+  display: flex;
+  justify-content: space-between;
+}
