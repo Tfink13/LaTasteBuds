@@ -1,4 +1,133 @@
 html {
+  background: #DDDDDD;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* an underline appears at the bottom on hover of each link */
+nav ul li a:hover, nav ul li a:active {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 8px;
+}
+
+.carousel-wrapper {
+  height: 600px;
+  position: relative;
+  width: 85%;
+  margin: auto;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 11px 11px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.arrow-prev {
+  left: -30px;
+  position: absolute;
+  top: 58.6%;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+  right: -30px;
+  position: absolute;
+  top: 52.8%;
+  transform: translateY(45%) rotate(-45deg);
+}
+
+.light {
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    background-color: lightblue;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+/* @media (max-width: 480px) {
+  .arrow, .light .arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
+} */
+
+/*Select every element*/
+[id^="item"] {
+  display: none;
+}
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background-image: url('/Users/csetuser/Desktop/LaTasteBuds/images/tomato-1205699_1920.jpg');
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.item-2 {
+  background: url('/Users/csetuser/Desktop/LaTasteBuds/images/cook-366875_1920.jpg');
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.item-3 {
+  background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+  background-size: cover;
+  border-radius: 10px;
+}
+
+*:target~.item-1 {
+  opacity: 0;
+}
+
+#item-1:target~.item-1 {
+  opacity: 1;
+}
+
+#item-2:target~.item-2, #item-3:target~.item-3 {
+  z-index: 3;
+  opacity: 1;
+}
+}
+
+
+/* html {
   background: black;
 }
 
@@ -18,7 +147,7 @@ img.simg {
 }
 
 /* navigation section */
-nav {
+/* nav {
   position: fixed;
   z-index: 1;
   top: 0px;
@@ -30,22 +159,22 @@ nav {
 nav ul {
   list-style-type: none;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 nav ul li {
   display: inline-block;
   text-align: center;
   padding: 20px;
-  height: 2%;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
-}
-
+} */
 /* an underline appears at the bottom on hover of each link */
-nav ul li a:hover, nav ul li a:active {
+/* nav ul li a:hover, nav ul li a:active {
   border-bottom: 2px solid #ccc;
   padding-bottom: 8px;
 }
@@ -56,13 +185,13 @@ div#buttons {
 }
 
 /* Fading animation */
-.fade {
+/* .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-}
-
+} */
+/*
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -71,11 +200,10 @@ div#buttons {
   to {
     opacity: 1;
   }
-}
-
+}  */
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+/* @media only screen and (max-width: 300px) {
   div#buttons {
     width: : 50%;
   }
-}
+}  */
