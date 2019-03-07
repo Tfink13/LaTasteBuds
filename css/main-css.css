@@ -1,12 +1,18 @@
 html {
-  background: #DDDDDD;
+  background: #D58484;
+}
+
+nav {
+  position: relative;
+  top: -15px;
+  left: -8px;
+  width: 102%;
 }
 
 nav ul {
-  list-style-type: none;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
+  background: darkolivegreen;
+  padding-left: 0px;
 }
 
 nav ul li {
@@ -27,7 +33,7 @@ nav ul li a:hover, nav ul li a:active {
 }
 
 .carousel-wrapper {
-  height: 600px;
+  height: 800px;
   position: relative;
   width: 85%;
   margin: auto;
@@ -68,24 +74,20 @@ nav ul li a:hover, nav ul li a:active {
 .light {
   color: white;
 }
+
 @media only screen and (max-width: 600px) {
   html {
     background-color: lightblue;
   }
 }
+
 @media only screen and (max-width: 768px) {
+
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
   }
 }
-/* @media (max-width: 480px) {
-  .arrow, .light .arrow {
-    background-size: 10px;
-    background-position: 10px 50%;
-  }
-}
-} */
 
 /*Select every element*/
 [id^="item"] {
@@ -124,86 +126,3 @@ nav ul li a:hover, nav ul li a:active {
   z-index: 3;
   opacity: 1;
 }
-}
-
-
-/* html {
-  background: black;
-}
-
-img.simg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0.7;
-  width: 100%;
-  height: 100%
-}
-
-.ai1 {
-  width: 100px;
-  cursor: pointer;
-  position: relative;
-}
-
-/* navigation section */
-/* nav {
-  position: fixed;
-  z-index: 1;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  background-color: #221;
-}
-
-nav ul {
-  list-style-type: none;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  text-align: center;
-  padding: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-} */
-/* an underline appears at the bottom on hover of each link */
-/* nav ul li a:hover, nav ul li a:active {
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 8px;
-}
-
-div#buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Fading animation */
-/* .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-} */
-/*
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-
-  to {
-    opacity: 1;
-  }
-}  */
-/* On smaller screens, decrease text size */
-/* @media only screen and (max-width: 300px) {
-  div#buttons {
-    width: : 50%;
-  }
-}  */
