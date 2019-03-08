@@ -97,13 +97,13 @@ nav ul li a:hover, nav ul li a:active {
 .item-1 {
   z-index: 2;
   opacity: 1;
-  background-image: url('/Users/csetuser/Desktop/LaTasteBuds/images/tomato-1205699_1920.jpg');
+  background-image: url('images/tomato-1205699_1920.jpg');
   background-size: cover;
   border-radius: 10px;
 }
 
 .item-2 {
-  background: url('/Users/csetuser/Desktop/LaTasteBuds/images/cook-366875_1920.jpg');
+  background: url('images/cook-366875_1920.jpg');
   background-size: cover;
   border-radius: 10px;
 }
