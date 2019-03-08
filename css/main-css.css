@@ -11,7 +11,7 @@ nav {
 
 nav ul {
   text-align: center;
-  background: darkolivegreen;
+  background: #021a00;
   padding-left: 0px;
 }
 
@@ -97,19 +97,19 @@ nav ul li a:hover, nav ul li a:active {
 .item-1 {
   z-index: 2;
   opacity: 1;
-  background-image: url('../images/tomato-1205699_1920.jpg');
+  background-image: url('https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466_1280.jpg');
   background-size: cover;
   border-radius: 10px;
 }
 
 .item-2 {
-  background: url('../images/cook-366875_1920.jpg');
+  background: url('https://cdn.pixabay.com/photo/2017/02/15/10/39/food-2068217__480.jpg');
   background-size: cover;
   border-radius: 10px;
 }
 
 .item-3 {
-  background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+  background: url('https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220__480.jpg');
   background-size: cover;
   border-radius: 10px;
 }
